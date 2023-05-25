@@ -44,9 +44,9 @@ export const SHAPES = {
     J: {
         shape: [
             { x: 0, y: 0 },
-            { x: 1, y: 0 },
-            { x: 1, y: 1 },
-            { x: 1, y: 2 }
+            { x: 0, y: 1 },
+            { x: 0, y: 2 },
+            { x: -1, y: 2 }
         ],
         width: 2,
         height: 3,
@@ -99,5 +99,5 @@ export const randomShape = () => {
     const shapes = Object.values(SHAPES);
     const randIndex = Math.floor(Math.random() * shapes.length);
     return shapes[randIndex];
-  };
-  
+};
+
